@@ -14,6 +14,46 @@ a {
   color: #2196f3;
   text-decoration: none; }
 
+.hot-news {
+  padding: 16px 0; }
+  .hot-news .icon {
+    display: block;
+    width: 86px;
+    background: #000;
+    height: 24px;
+    position: relative;
+    border-radius: 2px 0 0 2px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    font-size: .8em;
+    text-transform: uppercase; }
+    .hot-news .icon:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-left: 6px solid #000;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent; }
+  .hot-news .news {
+    overflow: hidden; }
+  .hot-news .nav .nav-button {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    color: #aaa; }
+    .hot-news .nav .nav-button + .nav-button {
+      margin-left: 8px; }
+
 .header-top {
   background: #a68136;
   background: #000;

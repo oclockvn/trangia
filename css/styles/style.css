@@ -187,4 +187,60 @@ a {
     .search-container .form-control:hover, .search-container .form-control:focus {
       width: 250px; }
 
+.slider-container {
+  background: indigo;
+  height: 100%; }
+
+.widget-container {
+  background: #fff; }
+
+.widget-title {
+  border-bottom: 2px solid #eee;
+  position: relative;
+  padding: 16px 0 8px 0;
+  margin: 0 16px 16px; }
+  .widget-title:after {
+    border-bottom: 2px solid #f42;
+    content: '';
+    display: block;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    width: 25%; }
+
+.widget-footer {
+  background: #fcfcfc;
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: .9em; }
+  .widget-footer a {
+    color: #111; }
+
+.featured-posts {
+  margin: 0 16px; }
+
+.featured-post {
+  margin-bottom: 16px; }
+  .featured-post img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .featured-post .post-cover {
+    display: block; }
+  .featured-post .post-title {
+    font-size: 1.12em;
+    font-weight: 500;
+    margin-bottom: 4px; }
+    .featured-post .post-title a {
+      color: #111; }
+  .featured-post .post-tags a {
+    color: #aaa;
+    font-size: .85em;
+    text-transform: uppercase; }
+    .featured-post .post-tags a + a {
+      margin-left: 4px; }
+  .featured-post .post-meta {
+    font-size: .85em;
+    color: #aaa; }
+
 /*# sourceMappingURL=style.css.map */

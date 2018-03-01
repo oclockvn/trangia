@@ -102,14 +102,14 @@
             display: block;
             padding: 8px 8px 8px 16px;
             min-width: 250px;
-            color: #a68136;
+            color: $main-color;
             font-weight: 400;
             border-left: 2px solid transparent;
             transition: .25s;
             font-size: .9em;
 
             &:hover {
-                border-left-color: #f42;
+                border-left-color: $main-color;
               }
           }
       }
@@ -123,8 +123,7 @@
             font-weight: 600;
             font-weight: bold;
             font-size: .9em;
-            color: var(--main-color, #a68136);
-            color: #a68136;
+            color: $main-color;
 
             &:after {
                 content: '';
@@ -134,7 +133,7 @@
                 right: 0;
                 bottom: 0;
                 height: 2px;
-                background: #f42;
+                background: $main-color;
                 opacity: 0;
                 transition: .25s ease-in-out;
               }

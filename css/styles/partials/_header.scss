@@ -4,6 +4,12 @@
     background: #a68136;
     background: #000;
     color: #fff;
+
+    .langs {
+        a {
+            color: #fff;
+        }
+    }
   }
   
   .header-top-link {  
@@ -97,6 +103,7 @@
         white-space: nowrap;
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
         border: 1px solid #fff;
+        z-index: 100;
 
         a {
             display: block;

@@ -1,0 +1,64 @@
+$user-avatar-size: 40px;
+
+.survey-container {  
+    padding: 0 16px;
+  }
+  
+  .survey {  
+    margin-bottom: 16px;
+
+    .s-user {  
+        width: $user-avatar-size;
+        height: $user-avatar-size;
+        line-height: $user-avatar-size;
+        text-align: center;
+        
+        border-radius: 50%;
+        background: #eee;
+        font-weight: 900;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+        transition: .6s ease;
+      }
+
+      .s-body {
+        flex: 1;
+        margin-left: 16px;
+      }
+
+      .s-body-meta {
+        font-size: .9em;
+        color: #aaa;
+        margin-bottom: 4px;
+
+        a {
+            color: #aaa;  
+          }
+      }
+
+      .s-title {
+        color: #111;
+        display: inline-block;
+      }
+
+      &:hover {
+        // .s-user {
+        //     // background: $red-color;
+        //     // color: #fff;
+        //   }
+
+          .s-title {
+              color: $link-color;
+          }
+      }
+  }
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -456,4 +456,70 @@ a {
   .service .service-desc {
     padding: 8px 0 16px; }
 
+.client-container {
+  margin: 3em 0;
+  background: #fff url(../../img/client-bg.jpg);
+  padding: 5em 0; }
+  .client-container h2 {
+    margin-bottom: 1em;
+    font-weight: 900;
+    font-size: 2em; }
+  .client-container img {
+    max-width: 120px; }
+  .client-container .clients {
+    position: relative;
+    -webkit-perspective: 200px;
+            perspective: 200px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+  .client-container .c-nav .nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #a68136;
+    color: #fff;
+    border: 1px solid #a68136;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+    .client-container .c-nav .nav.nav-left {
+      left: 0; }
+    .client-container .c-nav .nav.nav-right {
+      right: 0; }
+  .client-container .c-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .client-container .client {
+    width: 120px;
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    -webkit-transition: .6s ease;
+    transition: .6s ease; }
+    .client-container .client:hover {
+      -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+      -webkit-transform: translateY(-16px);
+              transform: translateY(-16px); }
+    .client-container .client img {
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
 /*# sourceMappingURL=style.css.map */

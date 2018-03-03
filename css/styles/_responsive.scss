@@ -1,0 +1,47 @@
+@media screen and (max-width: 992px) {
+    .menu, .nav-menu {
+      flex-direction: column;
+      flex: 1;    
+      width: 100%;
+    }
+    
+    .search-container {    
+      flex: 1;
+      width: 100%;
+      padding: 16px 0;    
+    }
+    
+    .search-container .form-control {
+      width: 100%;
+    }
+    
+    .search-container .form-control:hover,
+    .search-container .form-control:focus {
+      width: 100%;
+    }
+    
+    .menu .has-child .menu-child {    
+      position: static;
+      box-shadow: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu .menu-child a {
+      padding: 8px;
+    }
+    .menu li {
+      display: block;    
+      width: 100%;
+      border-left: 2px solid transparent;
+      text-align: center;
+    }
+    
+    .menu li:hover a:after {
+      display: none;
+    }
+    
+    .hotline span {
+      font-size: 2em;
+    }
+  }

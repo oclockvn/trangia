@@ -5,39 +5,48 @@
   
   .f-info {
     padding: 2em 0;
-  }
-  
-  .f-info ul {  
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .f-info ul li {  
-    display: flex;
-    padding: 8px 0;
-    align-items: flex-start;
-  }
-  
-  .f-info ul li + li {
-    border-top: 1px solid rgba(255,255,255,.1);
-  }
-  
-  .f-info ul li > div {
-    margin-left: 16px;
-  }
-  
-  .f-info .f-title {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    margin-top: 1em;
-    color: #fff;
-  }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #aaa;
+          }
+      }
+
+      ul {  
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {  
+            display: flex;
+            padding: 8px 0;
+            align-items: flex-start;
+
+            + li {
+                border-top: 1px dashed rgba(255,255,255,.1);
+              }
+
+              > div {
+                margin-left: 16px;
+              }
+          }
+      }
+
+      .f-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-top: 1em;
+        color: #fff;
+      }
+  }  
 
   // logo
   .footer-logo > .logo-container {
     padding: 1.5em 0;
+    background: #fff url(../../img/client-bg.jpg);
   }
 
   // policy
@@ -53,4 +62,25 @@
   
   .policy-container a + a {
     margin-left: 16px;
+  }
+
+  // tag
+  .tags-cloud {
+    a {
+        border: 1px solid #eee;
+        border: none;
+        padding: 2px 8px;
+        margin: 0 4px 4px 0;
+        float: left;
+        font-size: .9em;
+        background: #000;
+        color: #aaa;
+        transition: .6s ease;
+
+        &:hover {
+            background: #fff;
+            color: #000;
+            box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+          }
+      }
   }

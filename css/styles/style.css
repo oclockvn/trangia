@@ -482,9 +482,7 @@ a {
 .service-container {
   background: #fff;
   padding: 4em 0;
-  background-image: url(../../img/bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../../img/client-bg.jpg);
   background-position: center; }
   .service-container .title {
     font-weight: 600;

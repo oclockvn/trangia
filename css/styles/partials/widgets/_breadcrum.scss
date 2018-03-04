@@ -1,0 +1,23 @@
+.breadcrumb-container {
+    border-top: 1px solid #fafafa;
+    background: #fafafa; 
+
+    .breadcrumb {
+        background: #fafafa;  
+        margin: 0;
+        border-radius: 0;
+
+        a {
+            color: #333;
+        }
+
+        li {
+            // color: #f42;
+            text-transform: uppercase;
+        }
+    }
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '→';
+  }

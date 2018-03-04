@@ -702,6 +702,15 @@ a {
     display: none; }
 
   .hotline span {
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .member-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .member .full-desc {
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */

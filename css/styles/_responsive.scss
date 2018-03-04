@@ -44,4 +44,16 @@
     .hotline span {
       font-size: 2em;
     }
-  }
+
+    // member
+    .member-container {
+      flex-direction: column;
+    }
+    
+    .member .full-desc {
+      width: 90%;
+    } 
+
+  } // end
+
+ 

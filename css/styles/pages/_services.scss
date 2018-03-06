@@ -1,0 +1,34 @@
+.sub-link-container {
+    background: #fff;  
+    border-radius: 4px;
+    padding: 0 16px;
+
+    a {
+        display: block;  
+        padding: 8px 0;
+        color: #aaa;
+        transition: .6s ease;
+
+        &:hover:not(.active) {
+            color: $main-color;
+            transform: translateX(8px);
+          }
+
+          &.active {
+            background: $main-color;
+            color: #fff;
+            font-weight: 600;
+            padding-left: 8px;
+          }
+      }
+
+      div + div {
+        border-top: 1px solid rgba($main-color, 0.1);
+      }
+  }
+  
+ 
+  
+  
+  
+  

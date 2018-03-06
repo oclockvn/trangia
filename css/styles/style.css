@@ -2,6 +2,34 @@
 .main-color {
   color: #a68136 !important; }
 
+.z-depth-0 {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+.z-depth-1 {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+.z-depth-1-half {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
+
+.z-depth-2 {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-3 {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-4 {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
+
+.z-depth-5 {
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
+
 html, body {
   background: #ebebeb;
   font-size: 14px;
@@ -259,7 +287,6 @@ a {
     white-space: nowrap;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    border: 1px solid #fff;
     z-index: 100; }
     .menu .menu-child a {
       display: block;
@@ -273,9 +300,9 @@ a {
       font-size: .9em; }
       .menu .menu-child a:hover {
         border-left-color: #a68136; }
-  .menu > li.active a {
+  .menu > li.active > a {
     background: rgba(166, 129, 54, 0.3); }
-    .menu > li.active a:after {
+    .menu > li.active > a:after {
       opacity: 1; }
   .menu > li > a {
     display: block;
@@ -655,6 +682,28 @@ a {
   .member:hover .full-desc {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
+
+.sub-link-container {
+  background: #fff;
+  border-radius: 4px;
+  padding: 0 16px; }
+  .sub-link-container a {
+    display: block;
+    padding: 8px 0;
+    color: #aaa;
+    -webkit-transition: .6s ease;
+    transition: .6s ease; }
+    .sub-link-container a:hover:not(.active) {
+      color: #a68136;
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px); }
+    .sub-link-container a.active {
+      background: #a68136;
+      color: #fff;
+      font-weight: 600;
+      padding-left: 8px; }
+  .sub-link-container div + div {
+    border-top: 1px solid rgba(166, 129, 54, 0.1); }
 
 @media screen and (max-width: 992px) {
   .menu, .nav-menu {

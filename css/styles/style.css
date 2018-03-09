@@ -705,6 +705,61 @@ a {
   .sub-link-container div + div {
     border-top: 1px solid rgba(166, 129, 54, 0.1); }
 
+.item {
+  background: #fff;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+  overflow: hidden;
+  border-radius: 4px; }
+  .item:hover {
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+  .item .col-item-left a {
+    display: block; }
+  .item .col-item-left img {
+    max-width: 120px;
+    min-height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .item + .item {
+    margin-top: 2em; }
+  .item .col-item-right {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .item .item-title a {
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+    color: #a68136; }
+  .item .item-meta {
+    font-size: .9em;
+    color: #aaa; }
+
+.paging-container {
+  padding: 2em 0; }
+  .paging-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .paging-container ul a {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      display: block;
+      padding: 0;
+      font-weight: 600;
+      color: #a68136;
+      border-radius: 50%;
+      background: #fff; }
+  .paging-container li + li {
+    margin-left: 8px; }
+  .paging-container li.active a {
+    background: #a68136;
+    color: #fff; }
+
 @media screen and (max-width: 992px) {
   .menu, .nav-menu {
     -webkit-box-orient: vertical;

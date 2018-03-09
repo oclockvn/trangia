@@ -429,7 +429,10 @@ a {
   border-bottom: 2px solid #eee;
   position: relative;
   padding: 16px 0 8px 0;
-  margin: 0 16px 16px; }
+  margin: 0 16px 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25em; }
   .widget-title:after {
     border-bottom: 2px solid #f42;
     content: '';
@@ -706,14 +709,10 @@ a {
     border-top: 1px solid rgba(166, 129, 54, 0.1); }
 
 .item {
-  background: #fff;
   -webkit-transition: .25s linear;
   transition: .25s linear;
   overflow: hidden;
-  border-radius: 4px; }
-  .item:hover {
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+  padding-top: 2em; }
   .item .col-item-left a {
     display: block; }
   .item .col-item-left img {
@@ -722,7 +721,8 @@ a {
     -o-object-fit: cover;
        object-fit: cover; }
   .item + .item {
-    margin-top: 2em; }
+    margin-top: 2em;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1); }
   .item .col-item-right {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -755,10 +755,24 @@ a {
       border-radius: 50%;
       background: #fff; }
   .paging-container li + li {
-    margin-left: 8px; }
+    margin-left: 16px; }
   .paging-container li.active a {
     background: #a68136;
     color: #fff; }
+
+.page-search-container {
+  padding: 16px; }
+
+.most-read-container .most-read {
+  padding: 8px 16px; }
+  .most-read-container .most-read + .most-read {
+    border-top: 1px dashed #eee; }
+  .most-read-container .most-read a {
+    font-size: .9em;
+    color: #aaa;
+    display: block; }
+    .most-read-container .most-read a:hover {
+      color: #a68136; }
 
 @media screen and (max-width: 992px) {
   .menu, .nav-menu {

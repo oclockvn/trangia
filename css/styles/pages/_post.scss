@@ -87,3 +87,62 @@
         text-align: center;
     }
 }
+
+// related post
+.related-post-widget {
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.related-post {
+    .rp-meta {
+        color: #aaa;
+        font-size: .9em;
+    }
+
+    .rp-title a {
+        font-weight: bold;
+        font-size: 16px;
+        display: block;
+        padding: 4px 0;
+        color: $main-color;
+    }
+}
+
+.post-widget .widget-title {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+// old post
+.category-widget {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            font-size: .9em;
+
+            + li a {
+                border-top: 1px dashed #ddd;
+            }
+        }
+
+        a {
+            display: block;
+            flex: 1;
+            color: $main-color;
+            padding: 4px 0;
+        }
+
+        time {
+            display: block;
+            width: 130px;
+            padding: 4px 0;
+            color: #aaa;
+        }
+    }
+}
